@@ -16,5 +16,8 @@ do
 	fi
 done
 
-echo "Percantage of Heads: "${coin[heads]}
-echo "Percentage of Tails: "${coin[tails]}
+percent_head=$(((${coin[heads]}*100)/100))
+percent_tails=$(((${coin[tails]}*100)/100))
+
+echo "Percantage of Heads: "$percent_head
+echo "Percentage of Tails: "$percent_tails
