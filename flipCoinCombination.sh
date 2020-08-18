@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 read -p "Enter Number of tosses: " tosses
 read -p "Enter 1 or 2 or 3 coins: " coins
@@ -88,7 +88,7 @@ then
                 elif [[ $coin1 -ne 1 && $coin2 -eq 1 && $coin3 -ne 1 ]]
                 then
                         coin[tht]=$((${coin[tht]}+1))
-                elif [[ $coin2 -eq 1 && $coin1 -ne 1 && $coin3 -ne 1 ]]
+                elif [[ $coin1 -eq 1 && $coin2 -ne 1 && $coin3 -ne 1 ]]
                 then
                         coin[htt]=$((${coin[htt]}+1))
                 else
